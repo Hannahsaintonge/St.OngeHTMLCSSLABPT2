@@ -1,0 +1,263 @@
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+header {
+    margin-left: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: white;
+    font-size: .75em;
+    padding: 10px 25px;
+}
+
+.hire {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: .75em;
+    font-weight: bolder;
+}
+
+p {
+    color: #69696a;
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid #69696a;
+    padding-left: 10px;
+    width: 100%;
+    font-size: .75em;
+}
+
+.circles {
+    display: none;
+}
+
+.circle1 {
+    border-radius: 250px;
+    width: 225px;
+    height: 225px;
+    background-color: rgba(247, 136, 167, 0.6);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.circle2 {
+    border-radius: 250px;
+    width: 115px;
+    height: 115px;
+    background-color: rgba(207, 130, 213, 0.6);
+    position: absolute;
+    right: 10px;
+}
+
+.circle3 {
+    border-radius: 250px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(247, 193, 162, 0.7);
+    position: absolute;
+    top: 100px;
+    right: 20px;
+
+}
+
+.down {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+
+/* TABLET ********************************** */
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .nav_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #69696a;
+    }
+
+    li {
+        justify-content: flex-end;
+        flex-direction: row;
+        text-decoration: none;
+        color: white;
+        font-size: .75em;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .left {
+        width:40%;
+        margin-top: 20px;
+    }
+
+
+    .logo {
+        width: 30%;
+        font-size: .90em;
+        font-weight: 600;
+        margin-top: 20px;
+
+    }
+
+    p {
+        color: #69696a;
+        border-left: 2px solid #69696a;
+        padding-left: 10px;
+        width: 100%;
+        font-size: .75em;
+    }
+
+
+
+    .circles {
+        width: 40%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .circle1 {
+        border-radius: 250px;
+        width: 225px;
+        height: 225px;
+        background-color: rgba(247, 136, 167, 0.6);
+        position: absolute;
+        right: 90px;
+
+    }
+
+    .circle2 {
+        border-radius: 250px;
+        width: 115px;
+        height: 115px;
+        background-color: rgba(207, 130, 213, 0.6);
+        position: absolute;
+        right: 10px;
+    }
+
+    .circle3 {
+        border-radius: 250px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(247, 193, 162, 0.7);
+        position: absolute;
+        top: 100px;
+        right: 20px;
+
+    }
+
+    .hire {
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        width: auto;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .down {
+        width: auto;
+        margin: 50px 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-size: .75em;
+    }
+
+
+}
+
+
+/* DESKTOP ***************** */
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    p {
+        font-size: 14pt;
+        width: 100%;
+    }
+}
